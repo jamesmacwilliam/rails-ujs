@@ -281,7 +281,7 @@
         }
         params = [];
         inputs.forEach(function(input) {
-          if (!input.name) {
+          if (!input.name || input.disabled) {
             return;
           }
           if (matches(input, 'select')) {
